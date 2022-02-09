@@ -1,0 +1,89 @@
+<!DOCTYPE html >
+
+    <html >
+<header>
+
+<style>
+
+body{
+background-color: #664422;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.center
+{
+display:block;
+margin-left:auto ;
+margin-right:auto;
+width:20%;
+}
+.main_div
+{
+    /*margin:auto;*/
+    text-align:center;
+    /*width :60%; */
+}
+</style>
+
+</header>
+
+
+    <body>
+
+<img src="https://freepikpsd.com/file/2020/05/weight-loss-transparent-png-logo.png" class="center"></img>
+
+
+        <div class="main_div">
+
+        <h2 style="color:white;">Gib deine Gewicht und Größe ein! </h2>
+<input id= "hi" value=" "  >
+<label for="hi">Größe</label>
+<br/>
+<input id= "we" value=" "  >
+<label for="we">Gewicht</label>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3" style="color:#ff0000"><b></b></p>
+<p id="demo4"><b></b></p>
+<script>
+//var bmi;
+var h=document.getElementById("hi").value;
+var w=document.getElementById("we").value;
+var bmi=w/(Math.pow(h,2));
+
+
+function one()
+{
+//var bmi=we/(hi^2);
+
+//var h=document.getElementById("hi").value;
+//var w=document.getElementById("we").value;
+
+//var bmi=w/(Math.pow(h,2));
+
+var test1_1=(bmi<20)?"Leicht"
+:(bmi==20)?"Akzeptabel"
+:(bmi>20 && bmi <25)?"Gut"
+:(bmi>25)?"Übergewichtig"
+:"NA";
+document.getElementById("demo").innerHTML=parseFloat(bmi).toFixed(2);
+document.getElementById("demo2").innerHTML="Größe ist "+h;
+document.getElementById("demo3").innerHTML="Das Gewicht ist "+w;
+document.getElementById("demo4").innerHTML="Schäzung: " +test1_1;
+
+}
+
+</script>
+<script>
+
+function two()
+{
+alert("BMI is: "+ parseFloat(bmi).toFixed(2));
+}
+
+</script>
+<button onclick="one()">PUSH</button>
+<button onclick="two()">Get BMI</button>
+</div>
+</body>
+</html>
