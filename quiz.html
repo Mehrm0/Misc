@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+{
+background-color:rgb(222,222,222);
+}
+.center
+{
+display:block;
+margin-left:auto;
+margin-right:auto;
+width:10%;
+}
+
+
+</style>
+<script>
+function guide()
+{
+alert("Please enter the answer in lowercase in the box,below the options, then press the PUSH button");
+}
+/***********************************/
+function dedication()
+{
+alert("This quiz is dedicated to Arash");
+}
+</script>
+</head>
+<!--
+<script>
+var note1,note2,note3,note4,note5;
+</script>
+-->
+<body>
+
+<button onclick="guide()">Guide</button>
+<button onclick="dedication()">Dedication</button>
+
+<!--<label  for="exam">Choose an Exam</label>-->
+<select name="exam" id="exam" align="right">
+<option onclick="guide" value="general">General</option>
+<option value="moderate">Moderate</option>
+<option value="advanced" onclick="guide">Advanced</option>
+</select>
+<br/>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeI6dGW0gEThx02mVY0W1VHOuHsKqFE6lbHUFz-VCdWLugzI8VYTEOeXlEbBUuhHB4M94&usqp=CAU" class="center"></img>
+<h2 align="center">Welcome to Shahrokh Gym Quiz</h2>
+
+<p><b>1)Where was the gym before moving to Golzar?</b> </p>
+<p>a)Akhtar</p>
+<p>b)Kokab</p>
+<p>c)45 Metri</p>
+<p>d)Anoushiravan</p>
+<input id="get1" value="">
+<p id="1.1"></p>
+<p id="1.2"></p>
+<p id="1.3"></p>
+
+
+<script>
+var note1;
+function func1_1()
+{
+let get1=document.getElementById("get1").value;
+let test1_1=(get1=="c")?"Yes":"No";
+document.getElementById("1.1").innerHTML=test1_1;
+}
+</script>
+
+
+
+<script>
+function func1_2()
+{
+let get1=document.getElementById("get1").value;
+let test1_2;
+(get1=="c")?test1_2=true:test1_2=false;
+document.getElementById("1.2").innerHTML=test1_2;
+
+
+
+if(test1_2==true)
+{
+/*(test1_2==true)?note1=20:note1=0;*/
+note1=20
+}
+else
+{
+note1=0;
+}
+document.getElementById("1.3").innerHTML="Your note until now is:" +note1 + " out of 20";
+}
+</script>
+
+<button onclick="func1_1()">PUSH</button>
+<button onclick="func1_2()">Get Result</button>
+
+<!-- ----------------------------------------->
+<!-- 2 -->
+<!-- ----------------------------------------->
+
+<p><b>2)Who did the heaviest bench press?</b> </p>
+<p>a)Ayat</p>
+<p>b)Hadi</p>
+<p>c)Shahrokh</p>
+<p>d)Khosro</p>
+<input id="get2" value="">
+<p id="2.1"></p>
+<p id="2.2"></p>
+<p id="2.3"></p>
+
+
+<script>
+var note2;
+function func2_1()
+{
+
+var get2=document.getElementById("get2").value;
+var test2_1=(get2=="b")?"Yes":"No";
+document.getElementById("2.1").innerHTML=test2_1;
+}
+</script>
+
+<script>
+function func2_2()
+{
+var get2=document.getElementById("get2").value;
+var test2_2;
+(get2=="b")?test2_2=true:test2_2=false;
+document.getElementById("2.2").innerHTML=test2_2;
+
+
+/*var note2*/;
+if(test2_2==true)
+{
+/*(test1_2==true)?note1=20:note1=0;*/
+note2=20
+}
+else
+{
+note2=0;
+}
+document.getElementById("2.3").innerHTML="Your note till here is:" +(note1+note2)+ " out of 40";
+}
+</script>
+
+<button onclick="func2_1()">PUSH</button>
+<button onclick="func2_2()">Get Result</button>
+<!-- ----------------------------------------->
+<!-- 3 -->
+<!-- ----------------------------------------->
+<p><b>3)Which member of gym is dead?</b></p>
+<p>a)Mehrdad</p>
+<p>b)Ayat</p>
+<p>c)Banafshi</p>
+<p>d)None of the above</p>
+<input id="get3" value="">
+<p id="3.1"></p>
+<p id="3.2"></p>
+<p id="3.3"></p>
+</script>
+
+<script>
+function func3_1()
+{
+let get3=document.getElementById("get3").value;
+let test3_1=(get3=="c")?"Yes":"No";
+document.getElementById("3.1").innerHTML=test3_1;
+}
+</script>
+
+<script>
+var note3;
+function func3_2()
+{
+let get3=document.getElementById("get3").value;
+let test3_2;
+(get3=="c")?test3_2=true:test3_2=false;
+document.getElementById("3.2").innerHTML=test3_2;
+
+
+
+if(test3_2==true)
+{
+/*(test1_2==true)?note1=20:note1=0;*/
+note3=20;
+}
+else
+{
+note3=0;
+}
+document.getElementById("3.3").innerHTML="Your note until now is:" +(note1+note2+note3) + "out of 60";
+}
+</script>
+
+<button onclick="func3_1()">PUSH</button>
+<button onclick="func3_2()">Get Result</button>
+<!-- ----------------------------------------->
+<!-- 4 -->
+<!-- ----------------------------------------->
+<p><b>4)Who was the most experienced member of the gym? </b></p>
+<p>a)Hadi</p>
+<p>b)Ayat</p>
+<p>c)Mehdi</p>
+<p>d)Babapour</p>
+<input id="get4" value="">
+<p id="4.1"></p>
+<p id="4.2"></p>
+<p id="4.3"></p>
+</script>
+
+<script>
+var note4;
+function func4_1()
+{
+let get4=document.getElementById("get4").value;
+let test4_1=(get4=="b")?"Yes":"No";
+document.getElementById("4.1").innerHTML=test4_1;
+}
+</script>
+
+<script>
+function func4_2()
+{
+let get4=document.getElementById("get4").value;
+let test4_2;
+(get4=="b")?test4_2=true:test4_2=false;
+document.getElementById("4.2").innerHTML=test4_2;
+
+
+if(test4_2==true)
+{
+/*(test1_2==true)?note1=20:note1=0;*/
+note4=20
+}
+else
+{
+note4=0;
+}
+document.getElementById("4.3").innerHTML="Your note until now is:" +(note1+note2+note3+note4) + " out of 80";
+}
+</script>
+
+<button onclick="func4_1()">PUSH</button>
+<button onclick="func4_2()">Get Result</button>
+<!-- ----------------------------------------->
+<!-- 5 -->
+<!-- ----------------------------------------->
+<p><b>5)Who lived with his mother? </b></p>
+<p>a)Hassan</p>
+<p>b)Shahrokh</p>
+<p>c)Khosro</p>
+<p>d)Mehdi</p>
+<input id="get5" value="">
+<p id="5.1"></p>
+<p id="5.2"></p>
+<p id="5.3"></p>
+
+<script>
+var note5;
+function func5_1()
+{
+let get5=document.getElementById("get5").value;
+let test5_1=(get5=="a")?"Yes":"No";
+document.getElementById("5.1").innerHTML=test5_1;
+}
+</script>
+
+<script>
+
+function func5_2()
+{
+let get5=document.getElementById("get5").value;
+let test5_2;
+(get5=="a")?test5_2=true:test5_2=false;
+document.getElementById("5.2").innerHTML=test5_2;
+
+
+if(test5_2==true)
+{
+/*(test1_2==true)?note1=20:note1=0;*/
+note5=20
+}
+else
+{
+note5=0;
+}
+document.getElementById("5.3").innerHTML="Your note until now is:" +(note1+note2+note3+note4+note5) + "out of 100";
+}
+</script>
+<button onclick="func5_1()">PUSH</button>
+<button onclick="func5_2()">Get Result</button>
+<!-- ----------------------------------------->
+<!-- Ende -->
+<!-- ----------------------------------------->
+<p id="last"></p>
+<p id="assess">Assessment</p>
+
+<script>
+
+var sum;
+function score()
+{
+ sum=note1+note2+note3+note4+note5;
+document.getElementById("last").innerHTML="The final score is:"+ sum+" out of 100";
+}
+</script>
+<!-- -------------------------------------------------------------------------->
+<script>
+function ass()
+{
+if(sum>=80)
+{
+alert("Perfect, you know the gym very well!");
+}
+else if(sum<80 && sum>=60)
+{
+alert("Not bad, you've passed the exam!");
+}
+else
+{
+alert("Inacceptable, please repeat the test");
+}
+}
+</script>
+
+
+<button onclick="score()">Final Score</button>
+<button onclick="ass()">Assessment</button>
+<p><br/></p>
+<p><br/></p>
+<p><br/></p>
+<p><br/></p>
+<p><br/></p>
+<p class="copy" align="center"><small>
+Created October 12, 2021<br/>
+Copyright &#169; 2021 The Shahrokh Gym Organisation. All Rights Reseved.
+</small></p>
+</body>
+</html>
+
