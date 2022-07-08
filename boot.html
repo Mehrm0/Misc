@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+<script>
+function tog()
+{
+alert("This is an on/off switch");
+
+}
+
+</script>
+
+
+<!--
+<script>
+function ajax()
+{
+const xhttp=newXMLHttpRequest();
+xhttp.onload=function()
+{
+document.getElementById("demo").innerHTML=this.responseText;
+}
+xhttp.open("GET","this.txt");
+xhttp.send();
+}
+</script>
+-->
+
+<style>
+.center
+{
+display:block;
+margin-left:auto;
+margin-right:auto;
+width:10%;
+}
+
+#font
+{
+color:white;
+}
+
+</style>
+
+<title>Exmple</title>
+
+<meta charset="utf-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+<script>
+function func()
+{
+alert("This part will be completed");
+}
+</script>
+<div class="continer-fluid p-5 bg-secondary text-white text-center">
+
+
+<h1>Welcome to Fitness.com</h1>
+<p>Follow Our Instructions If You Want to Be Fit</p>
+</div>
+
+<div class="btn-group btn-group-lg">
+<div class="dropdown">
+<button type="button"  class="btn btn-dark"  dropdown-toggle data-bs-toggle="dropdown">Shoulder</button>
+<ul class="dropdown-menu">
+<li class="dropdown-item" onclick=func() >Halter</li>
+<li class="dropdown-item"  onclick=func()>Dumbel</li>
+
+</ul>
+</div>
+
+
+<button type="button"  class="btn btn-dark" onclick=func() >Biceps</button>
+<button type="button"  class="btn btn-dark" onclick=func() >Triceps</button>
+<button type="button"  class="btn btn-dark" onclick=func() >Thighs</button>
+<button type="button"  class="btn btn-dark" onclick=func() >Calf</button>
+<button type="button"  class="btn btn-dark" onclick=func() >Abs</button>
+<button type="button"  class="btn btn-dark" onclick=func() >Forearms</button>
+<button type="button"  class="btn btn-dark" onclick=func() >Dorsals</button>
+<button type="button"  class="btn btn-dark" onclick=func() >Waist</button>
+<button type="button"  class="btn btn-dark" onclick=func() >Flanks</button>
+<button type="button"  class="btn btn-dark" onclick=func() >Chest</button>
+<button type="button"  class="btn btn-dark" onclick=func() >Aerobics</button>
+<button type="button"  class="btn btn-dark" onclick=func() >Nutrition</button>
+<button type="button"  class="btn btn-dark" onclick=func() >Diet</button>
+</div>
+<br>
+
+
+</div>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)"></a>
+   
+
+ <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)"></a>
+        </li>
+      </ul>
+      <form class="d-flex">
+
+<!-- Default switch -->
+<div class="form-check form-switch">
+  <input class="form-check-input" align="left" type="checkbox" role="switch" id="flexSwitchCheckDefault" onchange="tog()"/>
+  <label class="form-check-label" for="flexSwitchCheckDefault">Toggle</label>
+</div>
+
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-secondary" type="button" onclick="func()">Search</button>
+      </form>
+
+</div>
+  </div>
+</nav>
+
+
+
+
+<div class="container-fluid lg-1" style="background-color:#aaaaaa">
+<div class="row">
+<div class="container col-md-1">
+<!-- ----------------------------------------------------- -->
+<div>
+<p><b>Nutrition</b></p>
+<hr>
+<p><a href="https://en.wikipedia.org/wiki/Carbohydrate"  target=_blank" >Carbohydrates</a></p>
+<p><a href=https://en.wikipedia.org/wiki/Protein""  target=_blank" >Proteins</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Mineral_(nutrient)"  target=_blank" >Minerals</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Lipid"  target=_blank" >Fats</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Water"  target=_blank" >Water</a></p>
+<p><a href=https://en.wikipedia.org/wiki/Food_fortification""  target=_blank" >Complements</a></p>
+<p><a href=https://en.wikipedia.org/wiki/Vitamin""  target=_blank" >Vitamins</a></p>
+<p><a href=""  target=_blank" >Other</a></p>
+
+</div>                          
+</div>                              
+                                 
+                              
+<div  id="font" class="col-md-10"  style="background-color:#665544"  align="center" >
+<br>
+<br>
+
+<h1 align="center" style="font-family:cursive"> Enter your height and weight</h1>
+                               
+<input id="h" size="1" value="">
+<label for="h">Height<span class="badge rounded-pill bg-primary">M</span></label>
+<br>                            
+<br>                            
+<br>                            
+<input id="w" size="1" value="" autofocus=true>
+<label for="w">Weight<span class="badge rounded-pill bg-primary">K</span></label>
+<br>
+<br>
+<br>
+<script>
+var bmi;
+function res()
+{
+
+
+var hi=document.getElementById("h").value; 
+document.getElementById("one").innerHTML="Height: "+ hi;
+
+var we=document.getElementById("w").value;
+document.getElementById("two").innerHTML="Weight: "+we;
+
+ bmi=we/(hi^2);
+document.getElementById("three").innerHTML="Your BMI is: "+parseFloat(bmi).toFixed(2);
+
+}
+</script>
+<script>
+var bmi;
+function assess()
+{
+
+if(bmi<18.5)
+{
+document.getElementById("four").innerHTML="Underweight";
+}
+else if(bmi>=18.5 && bmi<=24.9)
+{
+document.getElementById("five").innerHTML="Healthy";
+}
+else if (bmi>=25 && bmi <=29.9)
+{
+ document.getElementById("six").innerHTML="Overweight";
+}
+else if(bmi >=30)
+{
+document.getElementById("seven").innerHTML="Obese";
+}
+
+}
+</script>
+<div class="btn-groupe">
+<button onclick="res()" type="button" class="btn btn-dark">Get BMI</button>
+<button onclick="assess()" type="button" class="btn btn-dark"> Assessment</button>
+</div>
+
+
+
+<hr>
+<h3 id="one"><i></i></h3>
+<h3 id="two"><i></i></h3>
+<h3 id="three"><i>BMI will be printed here</i></h3>
+<br>
+<h3 id="four" style="color:blue"></h3>
+<h3 id="five" style="color:green"></h3>
+<h3 id="six" style="color:orange"></h3>
+<h3 id="seven" style="color:red"></h3>
+<!--
+<script>
+function rel()
+{
+window.location.reload();
+}
+</script>
+-->
+<p><i>Please reload to give a new entry</i></p>
+<button onclick="window.location.reload()">Reload</button>
+
+
+<br>
+<br>
+
+<ul>
+<li ><b>In this website you'll learn</b></li>
+<li>How to lose weight</li>
+<li>How to gain weight</li>
+<li>How to build muscle</li>
+<li>How to choose a diet </li>
+<li>How to be fit</li>
+<li>How to be healthy</li>
+<li>How to be like a bodybuilder</li>
+</ul>
+
+
+
+<br>
+
+
+
+<!--  ajax  -->
+
+<h2>The XMLHttpRequest Object</h2>
+<button type="button" onclick="loadDoc()">Request data</button>
+<p id="demo1"></p>
+
+<script>
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("demo1").innerHTML = this.responseText;
+  }
+  xhttp.open("GET", "ajax.xml");
+  xhttp.send();
+}
+
+/**********************************************/
+/*function myFunction(xml)
+{
+const xmlDoc=xml.responseXML;
+const x=xmlDoc.getElementsByTagName("gender");
+
+let table="<tr><th>Name</th><th>Sort</th></tr>";
+for(let i=0;i<x.length;i++)
+{
+table+="<tr><td>"+x[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue+"</td><td>"+x[i].getElementsByTagName("Sort")[0].childNodes[0].nodeValue+"</td></tr>";
+}
+document.getElementById("demo1").innerHTML=table;
+}
+*/
+</script>
+
+
+
+</div>
+
+<div  class="col-md-1  align="right" style="background-color:#aaaaaa" >
+<p><a href="https://en.wikipedia.org/wiki/Sergio_Oliva"   target="_blank"  >Oliva</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Larry_Scott_(bodybuilder)"  target="_blank" >Scott</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Arnold_Schwarzenegger#Bodybuilding_career"  target="_blank" >Arnold</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Franco_Columbu"  target="_blank" >Colombu</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Frank_Zane"  target="_blank" >Zane</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Chris_Dickerson_(bodybuilder)"  target="_blank" >Dickerson</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Samir_Bannout"  target="_blank" >Bannout</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Lee_Haney"  target="_blank" >Haney</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Dorian_Yates"  target="_blank" >Yates</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Ronnie_Coleman"  target="_blank" >Coleman</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Jay_Cutler_(bodybuilder)"  target="_blank" >Cutler</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Dexter_Jackson_(bodybuilder)"  target="_blank" >Jackson</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Phil_Heath"  target="_blank" >Heath</a></p>
+
+
+
+</div>
+      
+</div>
+      
+</div>
+<div style="background-color:#cccccc">
+<br>        
+<br>        
+<br>        
+<br>        
+         
+         
+<p align="center"><small>Body Buildying organisation@2022</small></p>
+    </div>  
+</body>
+</html>
