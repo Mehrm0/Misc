@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html>
+<head>
+<style>
+
+
+body{
+background-color:#996600;
+}
+
+
+#main
+{
+padding:200px;
+}
+
+
+</style>
+
+
+
+</head>
+
+
+
+<body>
+
+<div id="main" align="center">
+
+
+
+<h2>Rahn_be_ejare</h2>
+        
+<input type="text" value=" " id="val">
+<button onclick="Res1()">Get Result</button>
+       
+<h4 id="result1"><i>Result will appear here</i></h4>         
+
+
+
+
+<h2>Ejare_be_rahn</h2>          
+<input type="text" value=" " id="val2">
+<button onclick="Res2()">Get Result</button>
+
+
+
+
+<script>
+function Res1(){
+//var l=6;
+
+
+var rahn=document.getElementById("val").value;
+ var ress=rahn*0.03;
+document.getElementById("result1").innerHTML=ress;
+}
+</script>
+
+<script>
+
+function Res2(){
+  //  var l=6;
+    
+    
+    var ejare=document.getElementById("val2").value;
+     var ress2=ejare*33.333333333333;
+    document.getElementById("result2").innerHTML=ress2;
+    }
+
+</script>
+
+<h4 id="result2"><i>Result will appear here</i></h4>
+
+
+</body>
+
+
+</html>
+
+
