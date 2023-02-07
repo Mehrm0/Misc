@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+
+
+
+<!-- body ۷ --------------------------------->
+<!-- body ۷ --------------------------------->
+
+
+<body>
+
+
+    <div id="header_div_in_body" style="background-color: gray;">
+    <nav style="background-color: black; color: aliceblue;">
+        <a href="#">The sheer Power!</a>   |
+        <a href="#">Old Scholl</a>    |
+        <a href="#">The Legend Lewis </a>    |
+        <a href="#">1920s</a>          |
+       
+         <a href="#">What a powerful punch!</a>
+        </nav>
+           
+
+         <br/>
+   <br/>
+
+<br/>
+<br/>
+
+<h1 style="text-align:center; color:beige;" >Let's Talk Boxing</h1>
+<br/>
+<br/>
+<br/>
+
+</div>
+
+
+<div id="header_div_in_body2">
+<!--
+    Start of carousel
+-->
+<div id="demon" class="carousel slide" data-bs-ride="carousel">
+    <!--
+      c
+      -->
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="la.jpg" alt="Los Angeles" class="d-block" width="800px" height="500px"  style="width: 100%;">
+        </div>
+        <div   class="carousel-item">
+          <img src="chicago.jpg" alt="Chicago" class="d-block" width="800px" height="500px" style="width: 100%;"> 
+        </div>
+        <div   class="carousel-item">
+          <img src="ny.jpg" alt="New York" class="d-block" width="800px" height="500px" style="width: 100%;">
+        </div>
+      </div>
+      
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    
+    <!--
+    <div class="container-fluid mt-3">
+      
+    </div>
+-->
+<!--
+endof caroussel
+-->
+
+
+</div>
+
+    <div class="container" >
+    <div class="row">
+
+    <div style="background-color: cadetblue;" class="col-lg-2">
+<p>Power Punchers</p>
+<hr/>
+
+        <nav>
+<a href="#">Liston</a><br/>
+<a href="#">Foreman</a><br/>
+<a href="#">Lyle</a><br/>
+<a href="#">Marciano</a><br/>
+<a href="#">Tyson</a><br/>
+<a href="#">Tua</a><br/>
+<a href="#">Louis</a><br/>
+<a href="#">Lewis</a><br/>
+<a href="#">Dempsy</a><br/>
+<a href="#">Baer</a><br/>
+<a href="#">Jackson</a><br/>
+
+
+
+</nav>
+
+    </div>
+
+    <div class="col-lg-8" style="text-align: center;">
+
+
+
+        <div class="toggle">
+            <input type="checkbox" id="theme" class="toggle-input">
+            <label for="theme" class="toggle-label"> Toggle theme
+        <img src="./images/moon.svg alt=" alt="Dark Mode" class="toggle-icon">    
+        </label>
+        </div>
+            
+<!-----------------
+    Block1
+------------------>
+<br/>
+<br/>
+<br/>
+<p><b>1)Who punched harder?</b></p>
+<input type="radio" id="gets1" name="myButton" value="one">
+<label for="one">Liston</label>
+
+<br>
+<input type="radio" id="gets2" name="myButton" value="two">
+<label for="two">Xavi</label>
+
+<br>
+<input type="radio" id="gets3" name="myButton" value="three">
+<label for="three">Lyle</label>
+
+<br>
+<input type="radio" id="gets4" name="myButton" value="four">
+<label for="four">Foreman</label>
+
+<br>
+
+<script>
+var get1,res1,score1;
+function print_score1()
+{
+
+
+if(document.getElementById("gets1").checked==true){
+    res1=true;
+}else{
+    res1=false;
+}
+(res1===true)?score1=10:score1=0;
+document.getElementById("result1").innerHTML=score1;
+}
+
+</script>
+<button onclick="print_score1()">Get Score</button>
+<p id="result1">Result</p>
+
+<!------------------
+    Block2
+------------------>
+<p><b>2)Who was Ali's jaw broken by?</b></p>
+<input type="radio" id="gets1-2" name="myButton2" value="one2">
+<label for="one2">Foreman</label>
+
+<br>
+<input type="radio" id="gets2_2" name="myButton2" value="two2">
+<label for="two2">Frazier</label>
+
+<br>
+<input type="radio" id="gets3_2" name="myButton2" value="three2">
+<label for="three2">Norton</label>
+
+<br>
+<input type="radio" id="gets4_2" name="myButton2" value="four2">
+<label for="four2">Folly</label>
+
+<br>
+
+<script>
+var get2,res2,score2;
+function print_score2()
+{
+
+
+if(document.getElementById("gets3_2").checked==true){
+    res2=true;
+}else{
+    res2=false;
+}
+(res2===true)?score2=10:score2=0;
+document.getElementById("result2").innerHTML=(score1+score2);
+}
+
+</script>
+<button onclick="print_score2()">Get Score</button>
+<p id="result2">Result2</p>
+<!-----------------
+    Block3
+------------------>
+<p><b>3)Who was Marciano beaten by?</b></p>
+<input type="radio" id="gets1_3" name="myButton3" value="one3">
+<label for="one3">Moore</label>
+
+<br>
+<input type="radio" id="gets2_3" name="myButton3" value="two3">
+<label for="two3">Blackburn</label>
+
+<br>
+<input type="radio" id="gets3_3" name="myButton3" value="three3">
+<label for="three3">Dempsy</label>
+
+<br>
+<input type="radio" id="gets4_3" name="myButton3" value="four3">
+<label for="four3">None</label>
+
+<br>
+
+<script>
+var get3,res3,score3;
+function print_score3()
+{
+
+
+if(document.getElementById("gets4_3").checked==true){
+    res3=true;
+}else{
+    res3=false;
+}
+(res3===true)?score3=10:score3=0;
+document.getElementById("result3").innerHTML=(score1+score2+score3);
+}
+
+</script>
+<button onclick="print_score3()">Get Score</button>
+<p id="result3">Result</p>
+<!------------------
+ Block4
+------------------>
+<p><b>4)Who has held the belt(championship) for a longer time?</b></p>
+<input type="radio" id="gets1_4" name="myButton4" value="one4">
+<label for="one4">Toony</label>
+
+<br>
+<input type="radio" id="gets2_4" name="myButton4" value="two4">
+<label for="two4">Baer</label>
+
+<br>
+<input type="radio" id="gets3_4" name="myButton4" value="three4">
+<label for="three4">Carnera</label>
+
+<br>
+<input type="radio" id="gets4_4" name="myButton4" value="four4">
+<label for="four4">Louis</label>
+
+<br>
+
+<script>
+var get4,res4,score4;
+function print_score4()
+{
+
+
+if(document.getElementById("gets4_4").checked==true){
+    res4=true;
+}else{
+    res4=false;
+}
+(res4===true)?score4=10:score4=0;
+document.getElementById("result4").innerHTML=(score1+score2+score3+score4);
+}
+
+</script>
+<button onclick="print_score4()">Get Score</button>
+<p id="result4">Result</p>
+<!------------------
+    
+    Block5
+------------------>
+<p><b>5)Which two boxers defeated M.Tyson?</b></p>
+<input type="radio" id="gets1_5" name="myButton5" value="one5">
+<label for="one5">Lewis, Holyfield</label>
+
+<br>
+<input type="radio" id="gets2_5" name="myButton5" value="two5">
+<label for="two5">Dauglas, Hollyfield</label>
+
+<br>
+<input type="radio" id="gets3_5" name="myButton5" value="three5">
+<label for="three5">one and two</label>
+
+<br>
+<input type="radio" id="gets4_5" name="myButton5" value="four5">
+<label for="four5">Fury,lewis</label>
+
+<br>
+
+<script>
+var get5,res5,score5;
+function print_score5()
+{
+
+
+if(document.getElementById("gets3_5").checked==true){
+    res5=true;
+}else{
+    res5=false;
+}
+(res5===true)?score5=10:score5=0;
+document.getElementById("result5").innerHTML=(score1+score2+score3+score4+score5);
+}
+
+</script>
+<button onclick="print_score5()">Get Score</button>
+<p id="result5">Result5</p>
+<!------------------
+ Block6
+------------------>
+<p><b>6)Who didn't fight M.Tyson?</b></p>
+<input type="radio" id="gets1_6" name="myButton6" value="one6">
+<label for="one6">Foreman</label>
+
+<br>
+<input type="radio" id="gets2_6" name="myButton6" value="two6">
+<label for="two6">Lyle</label>
+
+<br>
+<input type="radio" id="gets3_6" name="myButton6" value="three6">
+<label for="three6">Douglas</label>
+
+<br>
+<input type="radio" id="gets4_6" name="myButton6" value="four6">
+<label for="four6">'a' and 'b'</label>
+
+<br>
+
+<script>
+var get6,res6,score6;
+function print_score6()
+{
+
+
+if(document.getElementById("gets4_6").checked==true){
+    res6=true;
+}else{
+    res6=false;
+}
+(res6===true)?score6=10:score6=0;
+document.getElementById("result6").innerHTML=(score1+score2+score3+score4+score5+score6);
+}
+
+</script>
+<button onclick="print_score6()">Get Score</button>
+<p id="result6">Result</p>
+<!------------------
+    
+    Block7
+------------------>
+<p><b>7)Which boxer had the best KO power??</b></p>
+<input type="radio" id="gets1_7" name="myButton7" value="one7">
+<label for="one7">Ali</label>
+
+<br>
+<input type="radio" id="gets2_7" name="myButton7" value="two7">
+<label for="two7">Foreman</label>
+
+<br>
+<input type="radio" id="gets3_7" name="myButton7" value="three7">
+<label for="three7">Lyle</label>
+
+<br>
+<input type="radio" id="gets4_7" name="myButton7" value="four7">
+<label for="four7">Lewis</label>
+
+<br>
+
+<script>
+var get7,res7,score7;
+function print_score7()
+{
+
+
+if(document.getElementById("gets2_7").checked==true){
+    res7=true;
+}else{
+    res7=false;
+}
+(res7===true)?score7=10:score7=0;
+document.getElementById("result7").innerHTML=(score1+score2+score3+score4+score5+score6+score7);
+}
+
+</script>
+<button onclick="print_score7()">Get Score</button>
+<p id="result7">Result</p>
+<!------------------
+    
+    Block8
+------------------>
+<p><b>8)Which two boxers fought Cleavland 'Big Cat' Williams?</b></p>
+<input type="radio" id="gets1_8" name="myButton8" value="one8">
+<label for="one">Marciano and Louis</label>
+
+<br>
+<input type="radio" id="gets2_8" name="myButton8" value="two8">
+<label for="two8">Lyle and Shavers</label>
+
+<br>
+<input type="radio" id="gets3_8" name="myButton8" value="three8">
+<label for="three8">Liston and Ali</label>
+
+<br>
+<input type="radio" id="gets4_8" name="myButton8" value="four8">
+<label for="four8">Tyson and Douglas</label>
+
+<br>
+
+<script>
+var get8,res8,score8;
+function print_score8()
+{
+
+
+if(document.getElementById("gets3_8").checked==true){
+    res8=true;
+}else{
+    res8=false;
+}
+(res8===true)?score8=10:score8=0;
+document.getElementById("result8").innerHTML=(score1+score2+score3+score4+score5+score6+score7+score8);
+}
+
+</script>
+<button onclick="print_score8()">Get Score</button>
+<p id="result8">Result</p>
+<!------------------
+    Block9
+------------------>
+<p><b>9)Who was nicknamed 'the Cobra of Cincinatti?</b></p>
+<input type="radio" id="gets1_9" name="myButton9" value="one9">
+<label for="one9">Carnera</label>
+
+<br>
+<input type="radio" id="gets2_9" name="myButton9" value="two9">
+<label for="two9">Moore</label>
+
+<br>
+<input type="radio" id="gets3_9" name="myButton9" value="three9">
+<label for="three9">Quarry</label>
+
+<br>
+<input type="radio" id="gets4_9" name="myButton9" value="four9">
+<label for="four9">E.Charles</label>
+
+<br>
+
+<script>
+var get9,res9,score9;
+function print_score9()
+{
+
+
+if(document.getElementById("gets4_9").checked==true){
+    res9=true;
+}else{
+    res9=false;
+}
+(res9===true)?score9=10:score9=0;
+document.getElementById("result9").innerHTML=(score1+score2+score3+score4+score5+score6+score7+score8+score9);
+}
+
+</script>
+<button onclick="print_score9()">Get Score</button>
+<p id="result9">Result</p>
+<!------------------
+    Block10
+------------------>
+<p><b>10)Who fought Ali, Foreman and Liston?</b></p>
+<input type="radio" id="gets1_10" name="myButton10" value="one10">
+<label for="one10">Wepner</label>
+
+<br>
+<input type="radio" id="gets2_10" name="myButton10" value="two10">
+<label for="two10">Quarry</label>
+
+<br>
+<input type="radio" id="gets3_10" name="myButton10" value="three10">
+<label for="three10">J.J.Walcott</label>
+
+<br>
+<input type="radio" id="gets4_10)" name="myButton10" value="four10">
+<label for="four10">Bonavena</label>
+
+<br>
+
+<script>
+var get10,res10,score10;
+function print_score10()
+{
+
+
+if(document.getElementById("gets1_10").checked==true){
+    res10=true;
+}else{
+    res10=false;
+}
+(res10===true)?score10=10:score10=0;
+document.getElementById("result10").innerHTML=(score1+score2+score3+score4+score5+score6+score7+score8+score9+score10);
+}
+
+</script>
+<button onclick="print_score10()">Get Score</button>
+<p id="result10">Result</p>
+
+<!------------------------
+    End of Blocks!
+------------------------->
+</div>
+
+<div class="col-lg-2" style="background-color:#aaaaaa;">
+<p>Third</p>
+</div>
+</div>
+</div>
+<div  id="footer1" style="text-align:center; background-color: black; color: aliceblue;">
+
+<hr/>
+<br/>
+<br/>
+<br/>
+
+<div class="container">
+<div class="row">
+
+<div class="col-sm-4">
+<p><a href="#">Punches</a></p>
+<p><a href="#">Uppercut</a></p>
+<p><a href="#">Right Jab</a></p>
+<p><a href="#">Left jab</a></p>
+<p><a href="#">Defence</a></p>
+<p><a href="#">Hook</a></p>
+
+</div>
+
+<div class="col-sm-4">
+    <p>Miscelanious</p>
+    <hr/>
+    <p><a href="#">Trainers</a></p>
+    <p><a href="#">Blackburn</a></p>
+    <p><a href="#">Cuz di Amato</a></p>
+    <p><a href="#">Eddi Futch</a></p>
+    <p><a href="#">Archie Moore</a></p>
+    <p><a href="#"></a></p>
+</div>
+
+<div class="col-sm-4">
+    <p><a href="#">The Golden Era</a></p>
+    <p><a href="#">Bare Knockle</a></p>
+    <p><a href="#">Before 1900</a></p>
+    <p><a href="#">The Boston Tar Boy</a></p>
+    <p><a href="#">Endless fights</a></p>
+    <p><a href="#">Praiah</a></p>
+</div>
+<br/>
+<br/>
+
+
+
+
+
+</div>
+</div>
+<br>
+<br>
+
+<p id="time">time</p>
+<br/>
+<br/>
+<br/>
+
+<script>
+const d = new Date();
+
+document.getElementById("time").innerHTML=d;
+</script>
+
+</div>
+
+
+
+<div id="footer2" style="background-color: gray;">
+
+    <div style="text-align:center;">
+<br/>
+<br/>
+<br/>
+<br/>
+        <small >Copyright@2023. Powered by Mehrdad Web Design Organisation. All rights reserved.</small>
+        <br/>
+        <br/>
+        <br/>
+    </div >
+</div>
+</body>
+</html>
+
