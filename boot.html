@@ -7,8 +7,10 @@
 <script>
 function tog()
 {
-alert("This is an on/off switch.");
+alert("This is an on/off switch");
+
 }
+
 </script>
 
 
@@ -28,6 +30,32 @@ xhttp.send();
 -->
 
 <style>
+
+
+/*********************
+
+sidenavbar
+********************************/
+.side-navbar a
+{
+text-decoration: none;
+display: block;
+}
+
+.side-navbar a:hover
+{
+background-color:#665544;
+height: 40px;
+}
+
+
+
+
+
+
+
+
+
 .center
 {
 display:block;
@@ -56,7 +84,7 @@ color:white;
 <script>
 function func()
 {
-alert("This part will be completed.");
+alert("This part will be completed");
 }
 </script>
 <div class="continer-fluid p-5 bg-secondary text-white text-center">
@@ -117,6 +145,7 @@ alert("This part will be completed.");
           <a class="nav-link" href="javascript:void(0)"></a>
         </li>
       </ul>
+      
       <form class="d-flex">
 
 <!-- Default switch -->
@@ -125,9 +154,54 @@ alert("This part will be completed.");
   <label class="form-check-label" for="flexSwitchCheckDefault">Toggle</label>
 </div>
 
-        <input class="form-control me-2" type="text" placeholder="Search">
+        <input class="form-control me-2" type="text" id="txt1" placeholder="Search"  onkeyup="showHint(this.value)">
         <button class="btn btn-secondary" type="button" onclick="func()">Search</button>
+        <br/>
+        <hr>
+ 
+
       </form>
+<br/>
+<p>Suggestions: <span id="txtHint"></span></p>
+<!--connecting to phphint-->
+<!--
+<!DOCTYPE html>
+<html>
+-->
+<body>
+<!--
+<h2>The XMLHttpRequest Object</h2>
+<h3>Start typing a name in the input field below:</h3>
+
+<p>Suggestions: <span id="txtHint"></span></p> 
+<p>First name: <input type="text" id="txt1" onkeyup="showHint(this.value)"></p>
+-->
+<script>
+function showHint(str) {
+  if (str.length == 0) { 
+    document.getElementById("txtHint").innerHTML = "";
+    return;
+  }
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("txtHint").innerHTML =
+    this.responseText;
+  }
+  xhttp.open("GET", "phpdb.php?q="+str);
+  xhttp.send();
+}
+
+
+
+</script>
+<!-- end of connectiong to PHP-->
+
+
+
+
+
+
+
 
 </div>
   </div>
@@ -138,19 +212,23 @@ alert("This part will be completed.");
 
 <div class="container-fluid lg-1" style="background-color:#aaaaaa">
 <div class="row">
-<div class="container col-md-1">
-<!-- ----------------------------------------------------- -->
-<div>
+<div class="container col-md-1" >
+
+
+
+
+  <!-- ----------------------------------------------------- -->
+<div class="side-navbar" >
 <p><b>Nutrition</b></p>
 <hr>
-<p><a href="https://en.wikipedia.org/wiki/Carbohydrate"  target=_blank" >Carbohydrates</a></p>
-<p><a href=https://en.wikipedia.org/wiki/Protein""  target=_blank" >Proteins</a></p>
-<p><a href="https://en.wikipedia.org/wiki/Mineral_(nutrient)"  target=_blank" >Minerals</a></p>
-<p><a href="https://en.wikipedia.org/wiki/Lipid"  target=_blank" >Fats</a></p>
-<p><a href="https://en.wikipedia.org/wiki/Water"  target=_blank" >Water</a></p>
-<p><a href=https://en.wikipedia.org/wiki/Food_fortification""  target=_blank" >Complements</a></p>
-<p><a href=https://en.wikipedia.org/wiki/Vitamin""  target=_blank" >Vitamins</a></p>
-<p><a href=""  target=_blank" >Other</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Carbohydrate"  target=_blank >Carbohydrates</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Protein"  target=_blank >Proteins</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Mineral_(nutrient)"  target=_blank >Minerals</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Lipid"  target=_blank >Fats</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Water"  target=_blank >Water</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Food_fortification"  target=_blank >Complements</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Vitamin"  target=_blank>Vitamins</a></p>
+<p><a href="#"  target=_blank >Other</a></p>
 
 </div>                          
 </div>                              
@@ -298,7 +376,8 @@ document.getElementById("demo1").innerHTML=table;
 </div>
 
 <div  class="col-md-1  align="right" style="background-color:#aaaaaa" >
-<p><a href="https://en.wikipedia.org/wiki/Sergio_Oliva"   target="_blank"  >Oliva</a></p>
+<div class="side-navbar">
+  <p><a href="https://en.wikipedia.org/wiki/Sergio_Oliva"   target="_blank"  >Oliva</a></p>
 <p><a href="https://en.wikipedia.org/wiki/Larry_Scott_(bodybuilder)"  target="_blank" >Scott</a></p>
 <p><a href="https://en.wikipedia.org/wiki/Arnold_Schwarzenegger#Bodybuilding_career"  target="_blank" >Arnold</a></p>
 <p><a href="https://en.wikipedia.org/wiki/Franco_Columbu"  target="_blank" >Colombu</a></p>
@@ -311,7 +390,7 @@ document.getElementById("demo1").innerHTML=table;
 <p><a href="https://en.wikipedia.org/wiki/Jay_Cutler_(bodybuilder)"  target="_blank" >Cutler</a></p>
 <p><a href="https://en.wikipedia.org/wiki/Dexter_Jackson_(bodybuilder)"  target="_blank" >Jackson</a></p>
 <p><a href="https://en.wikipedia.org/wiki/Phil_Heath"  target="_blank" >Heath</a></p>
-
+</div>
 
 
 </div>
