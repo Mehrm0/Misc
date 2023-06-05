@@ -7,11 +7,12 @@ border-radius: 50px;
 button
   {
  background-color:#000;
-  color: #ffffff;
-  border-radius: 30px;
+  color: #ffffee;
+  border-radius: 25px;
 }
   
-   .fa {
+  
+.fa {
     padding: 25px;
     font-size: 30px;
     width: 50px;
@@ -28,7 +29,6 @@ button
     
   
   
- 
     .navbar {
       overflow: hidden;
       background-color: #333;
